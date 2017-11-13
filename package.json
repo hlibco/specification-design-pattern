@@ -1,0 +1,100 @@
+{
+  "name": "testing",
+  "description": "Testing",
+  "version": "0.1.0",
+  "author": "Felipe Hlibco <felipe@cleanify.com>",
+  "engines": {
+    "npm": ">=6",
+    "yarn": ">=0.14.0"
+  },
+  "main": "./src/server",
+  "license": "UNLICENSED",
+  "private": true,
+  "pre-commit": "lint",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "cov": "nyc ava",
+    "cov:html": "rimraf ./coverage && nyc ava --reporter=html && opn coverage/index.html",
+    "lint": "tslint --project . -s node_modules/custom-tslint-formatters/formatters 'src/**/*.+(ts|tsx)' -t grouped",
+    "scripts": "npm-scripts-info",
+    "start": "nodemon",
+    "tdd": "yarn build && concurrently -r --kill-others 'npm run --silent build -- -w' 'sleepms 2000 && ava -w'",
+    "test": "NODE_ENV=test DEBUG=test,testing:* DEBUG_COLORS=true ava-ts src/__tests__/**/*.ts",
+    "unit": "yarn build && ava"
+  },
+  "scripts-info": {
+    "build": "(Trash and re)build the library",
+    "cov": "Run tests and generate coverage report",
+    "cov:html": "Run tests, generate the HTML coverage report, and open it in a browser",
+    "lint": "Lint all typescript source files",
+    "tdd": "Watch source files, rebuild library on changes and run tests on watch mode",
+    "test": "Test source files without compiling",
+    "unit": "Build the library, tests and run unit tests"
+  },
+  "ava": {
+    "color": true,
+    "concurrency": 5,
+    "failFast": true,
+    "require": [
+      "ts-node/register"
+    ],
+    "source_": [
+      "dist/__tests__/**/*.js"
+    ],
+    "tap": false,
+    "verbose": true,
+    "watch": false
+  },
+  "nyc": {
+    "all": true,
+    "lines": 20,
+    "statements": 5,
+    "functions": 5,
+    "branches": 5,
+    "include": [
+      "dist/**/*.js"
+    ],
+    "instrument": true,
+    "exclude": [
+      "dist/__tests__/**/*.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "cache": true,
+    "check-coverage": true,
+    "report-dir": "./coverage",
+    "sourceMap": true
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "expect",
+      "process"
+    ]
+  },
+  "dependencies": {
+    "spruce": "^1.0.3",
+    "tslib": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.47",
+    "ava": "^0.23.0",
+    "ava-ts": "0.23.0",
+    "concurrently": "^3.5.0",
+    "custom-tslint-formatters": "^2.1.1",
+    "nodemon": "1.12.1",
+    "npm-scripts-info": "^0.3.6",
+    "nyc": "11.3.0",
+    "opn-cli": "^3.1.0",
+    "rimraf": "^2.6.2",
+    "sinon": "4.1.1",
+    "sleep-ms": "^2.0.1",
+    "ts-node": "3.3.0",
+    "tslint": "^5.8.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "2.6.1"
+  }
+}
