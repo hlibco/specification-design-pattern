@@ -44,9 +44,10 @@
   dependencies:
     arrify "^1.0.1"
 
-"@types/node@^8.0.47":
+"@types/node@8.0.47":
   version "8.0.47"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.47.tgz#968e596f91acd59069054558a00708c445ca30c2"
+  integrity sha512-kOwL746WVvt/9Phf6/JgX/bsGQvbrK5iUgzyfwZNcKVFcjAUVSpF9HxevLTld2SG9aywYHOILj38arDdY1r/iQ==
 
 abbrev@1:
   version "1.1.1"
@@ -311,9 +312,10 @@ ava-ts@0.23.0:
     unique-temp-dir "^1.0.0"
     update-notifier "^2.3.0"
 
-ava@^0.23.0:
+ava@0.23.0:
   version "0.23.0"
   resolved "https://registry.yarnpkg.com/ava/-/ava-0.23.0.tgz#beed11730adef74a857761b62b8882bf16d5a038"
+  integrity sha512-ZsVwO8UENDoZHlYQOEBv6oSGuUiZ8AFqaa+OhTv/McwC+4Y2V9skip5uYwN3egT9I9c+mKzLWA9lXUv7D6g8ZA==
   dependencies:
     "@ava/babel-preset-stage-4" "^1.1.0"
     "@ava/babel-preset-transform-test-files" "^3.0.0"
@@ -990,9 +992,10 @@ concordance@^3.0.0:
     semver "^5.3.0"
     well-known-symbols "^1.0.0"
 
-concurrently@^3.5.0:
+concurrently@3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-3.5.0.tgz#8cf1b7707a6916a78a4ff5b77bb04dec54b379b2"
+  integrity sha1-jPG3cHppFqeKT/W3e7BN7FSzebI=
   dependencies:
     chalk "0.5.1"
     commander "2.6.0"
@@ -1078,9 +1081,10 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-custom-tslint-formatters@^2.1.1:
+custom-tslint-formatters@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/custom-tslint-formatters/-/custom-tslint-formatters-2.1.1.tgz#89b47f282a72e6d8633cbf9c8ff8704053c22282"
+  integrity sha1-ibR/KCpy5thjPL+cj/hwQFPCIoI=
   dependencies:
     chalk "^1.1.3"
 
@@ -2405,9 +2409,10 @@ npm-run-path@^2.0.0:
   dependencies:
     path-key "^2.0.0"
 
-npm-scripts-info@^0.3.6:
+npm-scripts-info@0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/npm-scripts-info/-/npm-scripts-info-0.3.6.tgz#14e7c78c1288bd6d82078769c7aa9583fc413c03"
+  integrity sha1-FOfHjBKIvW2CB4dpx6qVg/xBPAM=
   dependencies:
     chalk "^1.1.1"
     meow "^3.7.0"
@@ -2492,9 +2497,10 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
-opn-cli@^3.1.0:
+opn-cli@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/opn-cli/-/opn-cli-3.1.0.tgz#f819ae6cae0b411bd0149b8560fe6c88adad20f8"
+  integrity sha1-+BmubK4LQRvQFJuFYP5siK2tIPg=
   dependencies:
     file-type "^3.6.0"
     get-stdin "^5.0.1"
@@ -2979,7 +2985,7 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@^2.3.3, rimraf@^2.5.1, rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2:
+rimraf@2, rimraf@2.6.2, rimraf@^2.3.3, rimraf@^2.5.1, rimraf@^2.5.4, rimraf@^2.6.1:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.2.tgz#2ed8150d24a16ea8651e6d6ef0f47c4158ce7a36"
   dependencies:
@@ -3045,9 +3051,10 @@ slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
 
-sleep-ms@^2.0.1:
+sleep-ms@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/sleep-ms/-/sleep-ms-2.0.1.tgz#3cadbc4c6fb5e587c0c4e25f7685cbf0e3790db8"
+  integrity sha1-PK28TG+15YfAxOJfdoXL8ON5Dbg=
 
 slice-ansi@^1.0.0:
   version "1.0.0"
@@ -3130,9 +3137,10 @@ sprintf@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/sprintf/-/sprintf-0.1.0.tgz#46aced7ddcf21f27155a9812da47ea9ca1a0b5fc"
 
-spruce@^1.0.3:
+spruce@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/spruce/-/spruce-1.0.3.tgz#df43d6212489e983084a3bbc9cc7f9781bde2b48"
+  integrity sha1-30PWISSJ6YMISju8nMf5eBveK0g=
   dependencies:
     sprintf "0.1.0"
 
@@ -3403,13 +3411,15 @@ tsconfig@^6.0.0:
     strip-bom "^3.0.0"
     strip-json-comments "^2.0.0"
 
-tslib@^1.0.0, tslib@^1.7.1, tslib@^1.8.0:
+tslib@1.8.0, tslib@^1.0.0, tslib@^1.7.1:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.8.0.tgz#dc604ebad64bcbf696d613da6c954aa0e7ea1eb6"
+  integrity sha512-ymKWWZJST0/CkgduC2qkzjMOWr4bouhuURNXCn/inEX0L57BnRG6FhX76o7FOnsjHazCjfU2LKeSrlS2sIKQJg==
 
-tslint-config-standard@^7.0.0:
+tslint-config-standard@7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/tslint-config-standard/-/tslint-config-standard-7.0.0.tgz#47bbf25578ed2212456f892d51e1abe884a29f15"
+  integrity sha512-QCrLt8WwiRgZpRSgRsk6cExy8/Vipa/5fHespm4Q1ly90EB6Lni04Ub8dkEW10bV3fPN3SkxEwj41ZOe/knCZA==
   dependencies:
     tslint-eslint-rules "^4.1.1"
 
@@ -3421,9 +3431,10 @@ tslint-eslint-rules@^4.1.1:
     tslib "^1.0.0"
     tsutils "^1.4.0"
 
-tslint@^5.8.0:
+tslint@5.8.0:
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/tslint/-/tslint-5.8.0.tgz#1f49ad5b2e77c76c3af4ddcae552ae4e3612eb13"
+  integrity sha1-H0mtWy53x2w69N3K5VKuTjYS6xM=
   dependencies:
     babel-code-frame "^6.22.0"
     builtin-modules "^1.1.1"
