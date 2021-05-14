@@ -81,7 +81,7 @@
   },
   "devDependencies": {
     "@types/node": "^8.0.47",
-    "ava": "^0.23.0",
+    "ava": "3.15.0",
     "ava-ts": "0.23.0",
     "concurrently": "^3.5.0",
     "custom-tslint-formatters": "^2.1.1",
