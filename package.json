@@ -83,7 +83,7 @@
     "@types/node": "^8.0.47",
     "ava": "^0.23.0",
     "ava-ts": "0.23.0",
-    "concurrently": "^3.5.0",
+    "concurrently": "6.3.0",
     "custom-tslint-formatters": "^2.1.1",
     "nodemon": "1.12.1",
     "npm-scripts-info": "^0.3.6",
