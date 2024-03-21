@@ -2406,8 +2406,7 @@ npm-run-path@^2.0.0:
     path-key "^2.0.0"
 
 npm-scripts-info@^0.3.6:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/npm-scripts-info/-/npm-scripts-info-0.3.6.tgz#14e7c78c1288bd6d82078769c7aa9583fc413c03"
+  version "0.3.9"
   dependencies:
     chalk "^1.1.1"
     meow "^3.7.0"
